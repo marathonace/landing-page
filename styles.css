@@ -1,0 +1,58 @@
+/* 基本样式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* 手机端样式 */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px; /* 减小标题字体大小 */
+    }
+
+    p {
+        font-size: 14px; /* 减小正文字体大小 */
+    }
+
+    button {
+        width: 100%; /* 按钮宽度占满屏幕 */
+        padding: 15px; /* 增加按钮内边距 */
+        font-size: 18px; /* 增大按钮字体大小 */
+    }
+
+    footer {
+        font-size: 12px; /* 减小页脚字体大小 */
+    }
+}
