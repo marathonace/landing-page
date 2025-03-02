@@ -1,58 +1,110 @@
-/* 基本样式 */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
     color: #333;
     text-align: center;
-    padding: 20px;
-    margin: 0;
 }
 
 header {
+    background-color: #007BFF;
+    color: white;
+    padding: 60px 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #007BFF;
+.cta-button {
+    background-color: #28a745;
     color: white;
-    border: none;
+    padding: 15px 30px;
+    text-decoration: none;
     border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #0056b3;
+.cta-button:hover {
+    background-color: #218838;
 }
 
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.feature-item {
+    width: 30%;
+}
+
+.feature-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.feature-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 40px 20px;
+    background-color: #f4f4f9;
+}
+
+.testimonial-item {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item p {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-item span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Footer Section */
 footer {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #777;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
 
-/* 手机端样式 */
-@media (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
+footer a {
+    color: #28a745;
+    text-decoration: none;
+}
 
-    h1 {
-        font-size: 24px; /* 减小标题字体大小 */
-    }
-
-    p {
-        font-size: 14px; /* 减小正文字体大小 */
-    }
-
-    button {
-        width: 100%; /* 按钮宽度占满屏幕 */
-        padding: 15px; /* 增加按钮内边距 */
-        font-size: 18px; /* 增大按钮字体大小 */
-    }
-
-    footer {
-        font-size: 12px; /* 减小页脚字体大小 */
-    }
+footer a:hover {
+    text-decoration: underline;
 }
